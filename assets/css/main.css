@@ -187,7 +187,7 @@
 	/* Set your background with this */
 
 		background: #348cb2 url("images/bg.jpg") bottom left;
-		background-repeat: repeat-x;
+        
 		height: 100%;
 		left: 0;
 		opacity: 1;
@@ -343,6 +343,8 @@
 			vertical-align: middle;
 			width: 1px;
 		}
+
+    
 
 /* Header */
 
@@ -686,10 +688,21 @@
 		width: 100%;
 	}
 
+#bgimg {
+            width: 256px;
+            height: 256px;
+        }
+
 /* Wide */
 
 	@media screen and (max-width: 1680px) {
 
+        
+        #bgimg {
+            width: 256px;
+            height: 256px;
+        }
+        
 		/* Basic */
 
 			body, input, select, textarea {
@@ -766,12 +779,18 @@
 		#bg {
 			background-size: 1500px auto;
 			width: 4500px;
-		} }
+		}
+}
 
 /* Normal */
 
 	@media screen and (max-width: 1280px) {
 
+        #bgimg {
+            width: 256px;
+            height: 256px;
+        }
+        
 		/* Basic */
 
 			body, input, select, textarea {
@@ -852,8 +871,13 @@
 
 /* Mobile */
 
-	@media screen and (max-width: 736px) {
+	@media screen and (max-width: 700px) {
 
+        #bgimg {
+            width: 175px;
+            height: 175px;
+        }
+        
 		/* Basic */
 
 			body {
@@ -962,6 +986,11 @@
 
 	@media screen and (max-width: 480px) {
 
+        #bgimg {
+            width: 175px;
+            height: 175px;
+        }
+        
 		/* BG */
 
 			@-moz-keyframes bg {
